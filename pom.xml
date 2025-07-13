@@ -13,32 +13,32 @@
     </properties>
 
     <dependencies>
-        <!-- Updated version of Apache Commons Lang -->
+        <!-- Example of a dependency with a known vulnerability -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version> <!-- Updated version without known vulnerabilities -->
+            <version>3.9</version> <!-- Vulnerable version -->
         </dependency>
 
-        <!-- Updated version of Spring Framework Core -->
+        <!-- Example of another dependency with a known vulnerability -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.3.13</version> <!-- Updated version without known vulnerabilities -->
+            <version>5.2.0.RELEASE</version> <!-- Vulnerable version -->
         </dependency>
 
-        <!-- Updated version of Hibernate Core -->
+        <!-- A transitive dependency might introduce vulnerabilities as well -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.8.Final</version> <!-- Updated version without known vulnerabilities -->
+            <version>5.3.7.Final</version> <!-- Vulnerable version -->
         </dependency>
 
-        <!-- Updated version of JAXB API -->
+        <!-- An example of a persistent security issue in older versions -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>2.3.1</version> <!-- Specify that JAXB is typically not necessary with above (Java 9+) -->
+            <version>2.3.1</version> <!-- Vulnerable version -->
         </dependency>
     </dependencies>
 </project>
