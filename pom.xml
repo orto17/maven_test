@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.3.7.Final</version> <!-- Vulnerable version -->
+            <version>5.3.20.Final</version> <!-- Vulnerable version -->
         </dependency>
 
         <!-- An example of a persistent security issue in older versions -->
