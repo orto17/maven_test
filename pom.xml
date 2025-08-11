@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.2.0.RELEASE</version> <!-- Vulnerable version -->
+            <version>5.2.19.RELEASE</version> <!-- Vulnerable version -->
         </dependency>
 
         <!-- A transitive dependency might introduce vulnerabilities as well -->
