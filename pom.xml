@@ -17,21 +17,21 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.9</version> <!-- Vulnerable version -->
+            <version>3.18.0</version> <!-- Vulnerable version -->
         </dependency>
 
         <!-- Example of another dependency with a known vulnerability -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.2.0.RELEASE</version> <!-- Vulnerable version -->
+            <version>5.2.19.RELEASE</version> <!-- Vulnerable version -->
         </dependency>
 
         <!-- A transitive dependency might introduce vulnerabilities as well -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.3.7.Final</version> <!-- Vulnerable version -->
+            <version>5.3.20.Final</version> <!-- Vulnerable version -->
         </dependency>
 
         <!-- An example of a persistent security issue in older versions -->
