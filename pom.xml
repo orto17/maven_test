@@ -34,6 +34,20 @@
             <version>5.3.7.Final</version> <!-- Vulnerable version -->
         </dependency>
 
+         <!-- Updated version of Spring Framework Core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.3.13</version> <!-- Updated version without known vulnerabilities -->
+        </dependency>
+
+        <!-- Updated version of Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.8.Final</version> <!-- Updated version without known vulnerabilities -->
+        </dependency>
+
         <!-- An example of a persistent security issue in older versions -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
