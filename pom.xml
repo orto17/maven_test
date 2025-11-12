@@ -2,57 +2,74 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.example</groupId>
     <artifactId>vulnerability-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
     <dependencies>
-        <!-- Example of a dependency with a known vulnerability -->
+        <!-- Existing vulnerable dependencies -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version> <!-- Vulnerable version -->
         </dependency>
-
-        <!-- Example of another dependency with a known vulnerability -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>5.2.0.RELEASE</version> <!-- Vulnerable version -->
         </dependency>
-
-        <!-- A transitive dependency might introduce vulnerabilities as well -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>5.3.7.Final</version> <!-- Vulnerable version -->
         </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version> <!-- Vulnerable version -->
+        </dependency>
 
-         <!-- Updated version of Spring Framework Core -->
+        <!-- New dependencies with known vulnerabilities -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.2</version> <!-- Vulnerable version (CVE-2018-1000487) -->
+        </dependency>
+        <dependency>
+            <groupId>org.owasp.antisamy</groupId>
+            <artifactId>antisamy</artifactId>
+            <version>1.5.7</version> <!-- Vulnerable version (CVE-2021-22988) -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.2.4</version> <!-- Vulnerable version (CVE-2020-1957) -->
+        </dependency>
+        <dependency>
+            <groupId>io.jenkins.plugins</groupId>
+            <artifactId>plugin-parent</artifactId>
+            <version>3.22</version> <!-- Known vulnerabilities -->
+        </dependency>
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.9</version> <!-- Vulnerable version (CVE-2020-26247) -->
+        </dependency>
+
+        <!-- Updated version of Spring Framework Core -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>5.3.13</version> <!-- Updated version without known vulnerabilities -->
         </dependency>
-
         <!-- Updated version of Hibernate Core -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>5.6.8.Final</version> <!-- Updated version without known vulnerabilities -->
-        </dependency>
-
-        <!-- An example of a persistent security issue in older versions -->
-        <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-            <version>2.3.1</version> <!-- Vulnerable version -->
         </dependency>
     </dependencies>
 </project>
