@@ -14,6 +14,7 @@ permissions:
   pull-requests: write
   contents: write
   security-events: write
+  id-token: write
   # [Mandatory If using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
   # id-token: write
 
