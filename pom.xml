@@ -46,7 +46,7 @@
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-core</artifactId>
-            <version>1.2.4</version> <!-- Vulnerable version (CVE-2020-1957) -->
+            <version>1.13.0</version> <!-- Vulnerable version (CVE-2020-1957) -->
         </dependency>
         <dependency>
             <groupId>io.jenkins.plugins</groupId>
