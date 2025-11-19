@@ -56,7 +56,7 @@
         <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
-            <version>1.4.9</version> <!-- Vulnerable version (CVE-2020-26247) -->
+            <version>1.4.21</version> <!-- Vulnerable version (CVE-2020-26247) -->
         </dependency>
 
         <!-- Updated version of Spring Framework Core -->
