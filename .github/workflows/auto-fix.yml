@@ -23,3 +23,4 @@ jobs:
           affected_version: ${{ github.event.client_payload.affected_version }}
           fix_version:      ${{ github.event.client_payload.fix_version }}
           github_token:     ${{ secrets.AUTO_FIX_TOKEN }}
+          log_level:        ${{ github.event.client_payload.log_level || 'INFO' }}
