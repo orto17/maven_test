@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version> <!-- Updated version without known vulnerabilities -->
+            <version>3.18.0</version> <!-- Updated version without known vulnerabilities -->
         </dependency>
 
         <!-- Updated version of JAXB API -->
